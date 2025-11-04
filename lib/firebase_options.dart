@@ -17,10 +17,7 @@ import 'package:flutter/foundation.dart'
 class DefaultFirebaseOptions {
   static FirebaseOptions get currentPlatform {
     if (kIsWeb) {
-      throw UnsupportedError(
-        'DefaultFirebaseOptions have not been configured for web - '
-        'you can reconfigure this by running the FlutterFire CLI again.',
-      );
+      return web;
     }
     switch (defaultTargetPlatform) {
       case TargetPlatform.android:
@@ -33,10 +30,7 @@ class DefaultFirebaseOptions {
           'you can reconfigure this by running the FlutterFire CLI again.',
         );
       case TargetPlatform.windows:
-        throw UnsupportedError(
-          'DefaultFirebaseOptions have not been configured for windows - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
-        );
+        return windows;
       case TargetPlatform.linux:
         throw UnsupportedError(
           'DefaultFirebaseOptions have not been configured for linux - '
@@ -65,6 +59,28 @@ class DefaultFirebaseOptions {
     storageBucket: 'kasipapp-f198e.firebasestorage.app',
     iosClientId: '975984878171-ohjc0u7buik1n342d9q4a1ijlpsvlvuk.apps.googleusercontent.com',
     iosBundleId: 'com.example.careerCompasp',
+  );
+
+  
+
+  static const FirebaseOptions web = FirebaseOptions(
+    apiKey: 'AIzaSyBcAW9r7mfJgmGhkiyzdC_X5jwL4s0d5IM',
+    appId: '1:975984878171:web:c593c16a2038cbb3c4157e',
+    messagingSenderId: '975984878171',
+    projectId: 'kasipapp-f198e',
+    authDomain: 'kasipapp-f198e.firebaseapp.com',
+    storageBucket: 'kasipapp-f198e.firebasestorage.app',
+    measurementId: 'G-NTZ97X73D1',
+  );
+
+  static const FirebaseOptions windows = FirebaseOptions(
+    apiKey: 'AIzaSyBcAW9r7mfJgmGhkiyzdC_X5jwL4s0d5IM',
+    appId: '1:975984878171:web:f7df6e40397c6b00c4157e',
+    messagingSenderId: '975984878171',
+    projectId: 'kasipapp-f198e',
+    authDomain: 'kasipapp-f198e.firebaseapp.com',
+    storageBucket: 'kasipapp-f198e.firebasestorage.app',
+    measurementId: 'G-68WZ2KPNX3',
   );
 
 }
