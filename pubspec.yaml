@@ -1,3 +1,4 @@
+
 name: career_compasp
 description: "A new Flutter project."
 # The following line prevents the package from being accidentally published to
@@ -38,6 +39,8 @@ dependencies:
   google_sign_in: ^7.2.0
   firebase_auth: ^6.1.1
   firebase_core: ^4.2.0
+  flutter_dotenv: ^5.1.0
+  http: ^1.5.0
 
 dev_dependencies:
   flutter_test:
