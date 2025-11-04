@@ -1,3 +1,4 @@
+import 'package:career_compasp/backend/mongodb.dart';
 import 'package:career_compasp/frontend/HomePage.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -31,6 +32,7 @@ class _SignInPageState extends State<SignInPage> {
         email: controllerEmail.text.trim(),
         password: controllerPassword.text.trim(),
       );
+      await syncUserWithBackend();
 
       if (context.mounted) {
         Navigator.pushReplacement(
