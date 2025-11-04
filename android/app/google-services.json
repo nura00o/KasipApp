@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "975984878171",
+    "project_id": "kasipapp-f198e",
+    "storage_bucket": "kasipapp-f198e.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:975984878171:android:ccda6644a59777c2c4157e",
+        "android_client_info": {
+          "package_name": "com.example.career_compasp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "975984878171-asitsc3c9u1o1oas64ih54a6a221glmp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCLiNX7WUudg-c35PySGkH_nU5EkbjxOBw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "975984878171-asitsc3c9u1o1oas64ih54a6a221glmp.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "975984878171-ohjc0u7buik1n342d9q4a1ijlpsvlvuk.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.careerCompasp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
